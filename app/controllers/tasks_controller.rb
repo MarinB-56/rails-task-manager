@@ -6,8 +6,7 @@ class TasksController < ApplicationController
     @tasks = Task.all
   end
 
-  def show
-  end
+  def show; end
 
   def new
     @task = Task.new
@@ -19,8 +18,7 @@ class TasksController < ApplicationController
     redirect_to tasks_path
   end
 
-  def edit
-  end
+  def edit; end
 
   def update
     @task.update(task_params)
